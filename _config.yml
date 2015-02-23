@@ -1,0 +1,71 @@
+source: ./source
+
+excerpt_separator: "<!--more-->"
+
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://programmers-index-investment.github.io" # the base hostname & protocol for your site
+
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: プログラマによるインデックス投資実践記
+  avatar: blog_base/icon.png
+  gravatar: # email md5 hash
+  description: "プログラマによるインデックス投資実践記" # used by search engines
+  
+  # Header and footer text
+  header_text: 
+  footer_text: >
+   コメントは pull requestで受け付けています。
+   <p>Copyright 2015 programmers.index.investment@gmail.com All Rights Reserved.</p>
+     
+
+  
+  # Icons
+  rss: true
+  email_address: "programmers.index.investment@gmail.com"
+  behance:
+  bitbucket: 
+  dribbble: 
+  facebook: 
+  flickr: 
+  github: "programmers-index-investment/programmers-index-investment.github.io"
+  google_plus: 
+  instagram: 
+  linkedin:  # full URL
+  pinterest: 
+  reddit: 
+  soundcloud: 
+  stack_exchange:  # full URL
+  steam: 
+  tumblr: 
+  twitter: 
+  wordpress: 
+  youtube: 
+  
+  # Scripts
+  google_analytics: # tracking id, e.g. "UA-000000-01"
+  disqus_shortname:
+  
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+  
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
