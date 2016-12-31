@@ -4,8 +4,8 @@ layout: default
 
 <div class="home">
 
-  {% if site.theme.header_text %}
-  <div class="call-out">{{ site.theme.header_text }}</div>
+  {% if site.mytheme.header_text %}
+  <div class="call-out">{{ site.mytheme.header_text }}</div>
   {% endif %}
 
   <div class="posts">
@@ -23,7 +23,7 @@ layout: default
       <div class="excerpt">
         {{ post.excerpt }}
 
-        <!-- <a class="button" href="{{ post.url | prepend: site.baseurl }}">{{ site.theme.str_continue_reading }}</a> -->
+        <!-- <a class="button" href="{{ post.url | prepend: site.baseurl }}">{{ site.mytheme.str_continue_reading }}</a> -->
       </div>
       
     </div>
@@ -36,13 +36,13 @@ layout: default
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
       <i class="fa fa-chevron-left"></i> 
-      {{ site.theme.str_prev }}
+      {{ site.mytheme.str_prev }}
     </a>
     {% endif %}
 
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      {{ site.theme.str_next }} 
+      {{ site.mytheme.str_next }}
       <i class="fa fa-chevron-right"></i>
     </a>
     {% endif %}

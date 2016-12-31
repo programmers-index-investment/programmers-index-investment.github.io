@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://programmers-index-investment.github.io" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
-theme:
+mytheme:
   # Meta
   title: プログラマによるインデックス投資実践記
   avatar: blog_base/icon.png
