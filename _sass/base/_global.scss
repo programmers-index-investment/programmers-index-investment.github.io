@@ -111,3 +111,7 @@ img[align=left] {
 img[align=right] {
   margin-left: 3%;
 }
+// nested list
+ul li ul {
+  margin-left: 1em;
+}
