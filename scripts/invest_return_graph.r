@@ -30,7 +30,7 @@ lines(x, y2, xlab="", type="o", pch=16,
 # 1,000万円から3,000万円までを3分割で
      yaxp = c(10, 30, 4)
      )
-x_years = as.Date(c("2015/1/1", "2016/1/1", "2017/1/1", "2018/1/1"), "%Y/%m/%d")
+x_years = as.Date(c("2015/1/1", "2016/1/1", "2017/1/1", "2018/1/1", "2019/1/1"), "%Y/%m/%d")
 axis(1, x_years, format(x_years, "%Y/%m"), cex=2, cex.axis=1.5, cex.main=1.5, cex.lab=2)
 
 legend(x_years[1], y_range[2], c("評価額", "投資額"), cex=1.5, pch=c(16, 1))
