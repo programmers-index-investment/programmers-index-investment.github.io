@@ -20,18 +20,18 @@ par(mgp = c(3.5, 1, 0))
 plot(x, y1, xlab="", ylab="金額[百万円]", type="o", 
      cex.lab=2, cex.axis=1.5, cex.main=1.5, cex=2, ylim=y_range,
      xaxt="n",
-     # 1,000万円から6,000万円までを5分割で
-     yaxp = c(10, 60, 5),
+     # 1,000万円から7,000万円までを6分割で
+     yaxp = c(10, 70, 6),
      pch=1
      )
 lines(x, y2, xlab="", type="o", pch=16,
      ylab="金額[百万円]",
      cex.lab=2, cex.axis=1.5, cex.main=1.5, cex=2, ylim=y_range,
      xaxt="n",
-# 1,000万円から6,000万円までを5分割で
-     yaxp = c(10, 60, 5)
+# 1,000万円から7,000万円までを6分割で
+     yaxp = c(10, 70, 6)
      )
-x_years = as.Date(c("2015/1/1", "2016/1/1", "2017/1/1", "2018/1/1", "2019/1/1", "2020/1/1", "2021/1/1", "2022/1/1"), "%Y/%m/%d")
+x_years = as.Date(c("2015/1/1", "2016/1/1", "2017/1/1", "2018/1/1", "2019/1/1", "2020/1/1", "2021/1/1", "2022/1/1", "2023/1/1"), "%Y/%m/%d")
 axis(1, x_years, format(x_years, "%Y/%m"), cex=2, cex.axis=1.5, cex.main=1.5, cex.lab=2)
 
 legend(x_years[1], y_range[2], c("評価額", "投資額"), cex=1.5, pch=c(16, 1))
